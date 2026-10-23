@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondewatch - Weather Balloon Tracker</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: linear-gradient(180deg, #0E1A3A 0%, #3A3F7A 70%, #6B4F6E 100%) fixed;
+            color: #F7F4EE;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 48px 20px;
+            min-height: 100vh;
+        }
+        main { max-width: 720px; margin: 0 auto; }
+        header { text-align: center; padding-bottom: 28px; }
+        .icon { width: 112px; height: 112px; border-radius: 25px; box-shadow: 0 8px 30px rgba(0,0,0,0.35); }
+        h1 { font-size: 34px; font-weight: 700; letter-spacing: 0.5px; padding-top: 18px; }
+        .tagline { color: #F2A65A; font-size: 17px; padding-top: 4px; }
+        h2 { color: #F2A65A; font-size: 19px; font-weight: 600; padding: 28px 0 8px 0; }
+        p, li { color: rgba(247, 244, 238, 0.88); padding: 4px 0; }
+        ul { list-style: none; }
+        ul li { padding-left: 22px; position: relative; }
+        ul li::before { content: "\25CF"; color: #FF6A1F; font-size: 10px; position: absolute; left: 4px; top: 10px; }
+        a { color: #FF8C4D; }
+        .card { background: rgba(14, 26, 58, 0.55); border: 1px solid rgba(247, 244, 238, 0.12);
+                border-radius: 18px; padding: 8px 24px 20px 24px; margin-top: 20px; }
+        .links { text-align: center; padding-top: 32px; font-size: 15px; }
+        .links a { margin: 0 14px; text-decoration: none; }
+        .links a:hover { text-decoration: underline; }
+        .updated { color: #F2A65A; font-size: 14px; padding-top: 4px; }
+    </style>
+</head>
+<body>
+<main>
+
+<header>
+    <img class="icon" src="icon.png" alt="Sondewatch app icon, a weather balloon rising at dawn">
+    <h1>Sondewatch</h1>
+    <div class="tagline">Weather balloon tracker for iPhone and iPad</div>
+</header>
+
+<div class="card">
+<p>Twice a day, weather stations around the world launch radiosondes, instruments carried more than 30 kilometres into the stratosphere by a balloon. When it bursts, the sonde parachutes back to earth and lands in a field, a forest or a garden. Sondewatch shows you every one within range, live, and tells you where each will come down.</p>
+
+<h2>Features</h2>
+<ul>
+    <li>A live map of every radiosonde and amateur high-altitude balloon nearby, coloured by whether it is climbing, falling or down</li>
+    <li>The flown track and the predicted path to the landing point for any balloon you select</li>
+    <li>Distance and direction to the balloon and to its landing, with an arrow that turns with your compass</li>
+    <li>Elevation above your horizon, straight-line range, and whether it sits above your radio horizon, with its transmit frequency for listening on a scanner</li>
+    <li>Burst height and time, time aloft, and predicted landing time</li>
+    <li>Charts of altitude over time, temperature and dew point by height, and wind by height, from the sonde&#8217;s own measurements, with the freezing level and the tropopause</li>
+    <li>The launch sites nearest you, with their schedules in your local time, the sonde types and frequencies they fly, and a reminder before each launch</li>
+    <li>Chase Mode, alerting you as you close on a watched balloon or its landing point</li>
+    <li>A log of your finds with a photo and a note, and an optional report to the sonde-hunting community</li>
+    <li>Nearest Landing widget for the Home Screen and the Lock Screen</li>
+    <li>Watched balloons&#8217; tracks and the launch sites are kept on your phone, so they stay readable in a field with no signal</li>
+    <li>Universal &mdash; on iPad the balloon list sits beside its detail, and the map runs the full width of the screen</li>
+    <li>Metric or imperial, following your region by default, in light or dark</li>
+    <li>No account and no tracking</li>
+</ul>
+
+<h2>Data Source</h2>
+<p>Telemetry and launch site data come from <a href="https://sondehub.org" target="_blank" rel="noopener">SondeHub</a>, a volunteer network of receiving stations, used under the Creative Commons BY-SA 2.0 licence. Landing predictions come from SondeHub&#8217;s run of the Tāwhirimātea predictor. No account or subscription is needed.</p>
+<p>How many balloons you see depends on how many volunteer receivers are near you. Europe, North America and Japan are well covered, and some regions have few or none.</p>
+
+<h2>Support</h2>
+<p>Have a question, a problem, or an idea? Reach us here:</p>
+<ul>
+    <li><a href="https://github.com/FractalDoctor/Sondewatch/issues/new?labels=question" target="_blank" rel="noopener">Ask a question</a> &mdash; help with using Sondewatch</li>
+    <li><a href="https://github.com/FractalDoctor/Sondewatch/issues/new?labels=bug" target="_blank" rel="noopener">Report a bug</a> &mdash; something isn&#8217;t working</li>
+    <li><a href="https://github.com/FractalDoctor/Sondewatch/issues/new?labels=enhancement" target="_blank" rel="noopener">Request a feature</a> &mdash; suggest an improvement</li>
+</ul>
+<p>You can also browse <a href="https://github.com/FractalDoctor/Sondewatch/issues" target="_blank" rel="noopener">existing issues</a> to see whether your question has been answered.</p>
+</div>
+
+<div class="links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="https://github.com/FractalDoctor/Sondewatch/issues">Support &amp; Issues</a>
+</div>
+
+</main>
+</body>
+</html>
